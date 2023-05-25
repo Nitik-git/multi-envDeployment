@@ -4,8 +4,7 @@ on:
     branches:
       - qa1
       - qa2
-    # tags:
-    #   - qa1    
+    
   # workflow_dispatch:                                                              // add button to manual trigger
 
 jobs:

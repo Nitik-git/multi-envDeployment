@@ -1,11 +1,8 @@
 name: api-stag-workflow
 on:
   push:
-    # branches:
-    #   - stagging
-
-    tags:
-      - staging 
+    branches:
+      - stagging
     
   # workflow_dispatch:                                                              // add button to manual trigger
 
