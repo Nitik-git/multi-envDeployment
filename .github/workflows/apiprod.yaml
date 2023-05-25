@@ -3,7 +3,7 @@ on:
   # workflow_dispatch:
   push:
     branches:
-      - master                                                          // add button to manual trigger
+      - master
 
 jobs:
   hello:
