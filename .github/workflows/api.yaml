@@ -7,7 +7,19 @@ on:
   workflow_dispatch:
 
 jobs:
+
   hello:
+    if: env==staging
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: hello world
+        run: echo "Hello stagging World"
+        shell: bash
+
+
+  hello1:
+    if: env==prod
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
