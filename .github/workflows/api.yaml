@@ -1,4 +1,4 @@
-name: api-workflow
+name: api-stag-workflow
 on:
   push:
     branches:

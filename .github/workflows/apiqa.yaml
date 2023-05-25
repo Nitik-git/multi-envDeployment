@@ -1,4 +1,4 @@
-name: api-workflow
+name: api-qa-workflow
 on:
   push:
     branches:
