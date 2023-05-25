@@ -1,11 +1,11 @@
 name: api-qa-workflow
 on:
   push:
-    # branches:
-    #   - qa1
-    #   - qa2
-    tags:
-      - qa1    
+    branches:
+      - qa1
+      - qa2
+    # tags:
+    #   - qa1    
   # workflow_dispatch:                                                              // add button to manual trigger
 
 jobs:
