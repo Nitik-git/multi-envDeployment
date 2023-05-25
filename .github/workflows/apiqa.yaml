@@ -5,7 +5,7 @@ on:
       - qa1
       - qa2
     
-  # workflow_dispatch:                                                              // add button to manual trigger
+  workflow_dispatch:                                                              
 
 jobs:
   hello:
