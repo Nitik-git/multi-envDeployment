@@ -10,7 +10,7 @@ on:
 jobs:
 
   hello:
-    if: ${{ github.ref == 'ref/heads/master' }}
+    if: ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,7 +20,7 @@ jobs:
 
   
   hello1:
-    if: ${{ github.ref == 'ref/heads/qa1' }}
+    if: ${{ github.ref == 'refs/heads/qa1' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
