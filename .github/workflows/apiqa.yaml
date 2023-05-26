@@ -2,10 +2,10 @@ name: api-qa-workflow
 on:
   push:
     branches:
-      - qa1
-      - qa2
-    
-  workflow_dispatch:                                                              
+      - master
+      # - qa2
+
+  workflow_dispatch:
 
 jobs:
   hello:
