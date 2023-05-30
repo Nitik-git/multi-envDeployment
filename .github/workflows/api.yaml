@@ -1,28 +1,29 @@
-name: api-stag-workflow
-on:
-  push:
-    branches:
-      - stagging
+# name: api-stag-workflow
+# on:
+#   push:
+#     branches:
+#       - master
+#       - qa1
 
-  workflow_dispatch:
+#   workflow_dispatch:
 
-jobs:
+# jobs:
 
-  hello:
-    if: env==staging
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: hello world
-        run: echo "Hello stagging World"
-        shell: bash
+#   hello:
+#     if: ${{ github.ref == 'refs/heads/master' }}
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: hello world
+#         run: echo "Hello hellojob World"
+#         shell: bash
 
-
-  hello1:
-    if: env==prod
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: hello world
-        run: echo "Hello stagging World"
-        shell: bash
+  
+#   hello1:
+#     if: ${{ github.ref == 'refs/heads/qa1' }}
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: hello world
+#         run: echo "Hello hello1job World"
+#         shell: bash

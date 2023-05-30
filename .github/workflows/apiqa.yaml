@@ -1,17 +1,17 @@
-name: api-qa-workflow
-on:
-  push:
-    branches:
-      - qa1
-      - qa2
-    
-  workflow_dispatch:                                                              
+# name: api-qa-workflow
+# on:
+#   push:
+#     branches:
+#       - master
+#       - qa2
 
-jobs:
-  hello:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: hello world
-        run: echo "Hello qa World"
-        shell: bash
+#   workflow_dispatch:
+
+# jobs:
+#   hello:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: hello world
+#         run: echo "Hello qa World"
+#         shell: bash
