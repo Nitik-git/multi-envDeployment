@@ -1,9 +1,10 @@
 name: api-prod-workflow
 on:
   workflow_dispatch:
-  push:
+  pull_request:
+    types: [opened]
     branches:
-      - master                                               
+      - 'master'
 
 jobs:
   hello:
@@ -11,5 +12,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: hello world
-        run: echo "Hello prod World"
+        run: echo "Source branch is ${{ github.event.pull_request.head.ref }}"
         shell: bash
