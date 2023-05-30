@@ -1,9 +1,8 @@
 name: api-prod-workflow
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
+  pull_request:
+    types: [opened, reopened]
 
 jobs:
   hello:
